@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  app:
+    container_name: correvate-files-ms
+    image: correvate-files-ms
+    volumes:
+      - ".:/correvate-files-ms:rw"
+    build: .
+    ports:
+      - "8080:8080"
